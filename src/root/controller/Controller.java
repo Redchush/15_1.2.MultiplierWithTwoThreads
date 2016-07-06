@@ -1,12 +1,13 @@
 package root.controller;
 
-import root.view.View;
 import root.model.ModelFacade;
 import root.model.matrix.exception.MultipleException;
+import root.view.View;
 
 public class Controller {
-    private View view;
-    private ModelFacade modelFacade;
+
+    private final View view;
+    private final ModelFacade modelFacade;
 
     public Controller(View view, ModelFacade modelFacade) {
         this.view = view;
